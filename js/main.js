@@ -51,11 +51,23 @@ let portfolioBackBtn = document.querySelector('.portfolio-back-btn');
 
 portfolioBtn.addEventListener('click', () => {
   portfolioBlock.style.display = 'none';
-  // portfolieNext.classList.add('fade-in');
   portfolieNext.style.display = 'flex';
 });
 
 portfolioBackBtn.addEventListener('click', () => {
   portfolioBlock.style.display = 'flex';
   portfolieNext.style.display = 'none';
+});
+
+
+
+
+// Burger
+
+let menuButtom = document.querySelector('.menu-button');
+let menu = document.querySelector('.header-bottom-wrapper');
+
+menuButtom.addEventListener('click', () => {
+  menuButtom.classList.toggle('menu-button-active');
+  menu.classList.toggle('active');
 });
